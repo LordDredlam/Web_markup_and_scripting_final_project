@@ -4,12 +4,38 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <app-link rel="stylesheet" href="./finalProject.css">
-        <script src="./projectJS.js"></script>
+        <link rel="stylesheet" href="./finalProject.css">
+        <script src="./projectJS.js" defer></script>
         <title>WEB-115 Final Project</title>
     </head>
     <body>
-        <h1>Meal Plan</h1>
+        
+        <div id="form_banner">
+            <h1>Build Your Meal Plan!</h1>
+            <h3>By: <em>Donovan Ester</em></h3>
+            <h3>for WEB-115 section: 0001 </h3>
+
+
+            <form id ="meal_form">
+                <label for="name">Name:</label>
+                <input required type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email:</label>
+                <input
+                type="email"
+                required
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                >
+            
+                <label for="goal-of-the-week">Goal of the Week:</label>
+                <textarea id="goal-of-the-week" name="goal-of-the-week" rows="4" cols="50">What is your goal for the week?</textarea>
+                <input id ="meal_submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="meal_plan_form_parent">
+            
+        </div>
 
     </body>
 </html>
